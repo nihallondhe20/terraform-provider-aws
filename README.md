@@ -21,26 +21,3 @@ The [AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/
 - [Google Groups](http://groups.google.com/group/terraform-tool)
 
 _**Please note:** We take Terraform's security and our users' trust very seriously. If you believe you have found a security issue in the Terraform AWS Provider, please responsibly disclose it by contacting us at security@hashicorp.com._
-
-
-
-In IAM role you need to create eks policy 
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "eksadministrator",
-            "Effect": "Allow",
-            "Action": "eks:*",
-            "Resource": "*"
-        }
-    ]
-}
-
-using this u can access iam role 
-
-commands:
-  - export AWS_ACCESS_KEY_ID=$TF_VAR_AWS_ACCESS_KEY_ID
-  - export AWS_SECRET_ACCESS_KEY=$TF_VAR_AWS_SECRET_ACCESS_KEY
-
-for installing terraform google it
